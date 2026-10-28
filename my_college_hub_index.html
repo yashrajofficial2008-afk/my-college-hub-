@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101d35">
+<meta name="description" content="My College Hub — BCA notes, assignments, practicals and exam resources in one place.">
+<title>My College Hub | BCA Study Portal</title>
+<style>
+:root{--navy:#101d35;--navy2:#172a4b;--blue:#38bdf8;--ink:#172033;--muted:#64748b;--bg:#f4f7fb;--line:#e2e8f0;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink)}a{color:inherit}.wrap{width:min(1100px,92%);margin:auto}
+header{background:var(--navy);color:white;padding:18px 0 54px}.nav{display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none}.logo{display:grid;place-items:center;background:var(--blue);color:#082f49;width:44px;height:44px;border-radius:14px;font-size:23px}.brand strong{display:block;font-size:19px}.brand small{color:#b9c7db;letter-spacing:1.5px;font-size:10px}.navlinks{display:flex;gap:20px}.navlinks a{text-decoration:none;color:#dbeafe;font-size:14px}.hero{padding-top:48px;max-width:720px}.eyebrow{display:inline-block;color:#7dd3fc;background:#14375b;border:1px solid #285579;padding:7px 11px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.5px}.hero h1{font-size:clamp(35px,7vw,58px);line-height:1.06;letter-spacing:-1.7px;margin:18px 0 15px}.hero h1 span{color:var(--blue)}.hero p{color:#c6d2e3;font-size:16px;line-height:1.7;max-width:590px}.searchbox{margin-top:24px;background:white;border-radius:14px;padding:7px;display:flex;align-items:center;gap:8px;max-width:620px;box-shadow:0 12px 32px #02081730}.searchbox span{padding-left:10px;color:#64748b}.searchbox input{border:0;outline:0;min-width:0;flex:1;padding:12px 5px;font-size:15px;color:var(--ink)}.searchbox button{border:0;background:#0284c7;color:white;border-radius:10px;padding:12px 16px;font-weight:700;cursor:pointer}
+main{padding:30px 0 55px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:-57px;position:relative}.stat{background:white;border:1px solid #e8edf4;border-radius:15px;padding:17px;box-shadow:0 8px 25px #0f172a0a}.stat strong{display:block;font-size:22px}.stat small{color:var(--muted)}.section{margin-top:38px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:17px}.section h2{font-size:24px;letter-spacing:-.5px;margin:0}.section-head p{color:var(--muted);margin:6px 0 0;font-size:14px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.filter{border:1px solid var(--line);background:white;color:#334155;border-radius:999px;padding:9px 14px;cursor:pointer;font-weight:600;font-size:13px}.filter.active{background:var(--navy);border-color:var(--navy);color:white}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.card{background:white;border:1px solid var(--line);border-radius:17px;padding:19px;display:flex;flex-direction:column;min-height:205px;transition:transform .18s,box-shadow .18s}.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px #0f172a0d}.cardtop{display:flex;justify-content:space-between;align-items:center}.subject-icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;font-size:22px;background:#e0f2fe}.tag{font-size:11px;color:#475569;background:#f1f5f9;padding:6px 9px;border-radius:999px}.card h3{margin:15px 0 6px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:13px;line-height:1.55;flex:1}.card a,.card .soon{margin-top:17px;text-decoration:none;font-weight:700;font-size:13px;color:#0284c7}.card .soon{color:#94a3b8}.notice{border:1px dashed #cbd5e1;background:#fff;border-radius:14px;padding:16px;color:#475569;font-size:13px;line-height:1.65;margin-top:18px}.notice strong{color:#172033}.empty{display:none;padding:30px;text-align:center;color:var(--muted);background:white;border-radius:14px;border:1px solid var(--line)}.about{background:#eaf5ff;border:1px solid #d5eaff;border-radius:18px;padding:22px;line-height:1.7;color:#334155}.about h2{margin:0 0 8px;color:#10223e}.about p{margin:0}.footer{background:var(--navy);color:#c6d2e3;padding:24px 0;font-size:13px}.footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.footer strong{color:white}
+@media(max-width:760px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.navlinks{gap:12px}.navlinks a{font-size:12px}.hero{padding-top:38px}.stats{margin-top:-43px}}
+@media(max-width:480px){.navlinks a:first-child{display:none}.grid{grid-template-columns:1fr}.stat{padding:13px}.stat strong{font-size:19px}.stat small{font-size:11px}.hero h1{letter-spacing:-1px}.searchbox button{padding:12px}.section h2{font-size:21px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="#" aria-label="My College Hub home">
+        <span class="logo">🎓</span><span><strong>My College Hub</strong><small>BCA STUDY PORTAL</small></span>
+      </a>
+      <div class="navlinks"><a href="#subjects">Subjects</a><a href="#resources">Resources</a><a href="#about">About</a></div>
+    </nav>
+    <div class="hero">
+      <span class="eyebrow">YOUR BCA LEARNING SPACE</span>
+      <h1>Learn smarter.<br><span>Score better.</span></h1>
+      <p>Your BCA notes, assignments, practicals and exam resources — organised in one simple place. Find the material you need and keep learning.</p>
+      <form class="searchbox" id="searchForm">
+        <span>⌕</span><input id="searchInput" type="search" placeholder="Search subjects or study material..." aria-label="Search study material">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="stats" aria-label="Website features">
+    <div class="stat"><strong>📚 BCA</strong><small>Course material</small></div>
+    <div class="stat"><strong>📄 PDF-ready</strong><small>Notes and assignments</small></div>
+    <div class="stat"><strong>📱 Mobile</strong><small>Study anywhere</small></div>
+  </section>
+  <section class="section" id="subjects">
+    <div class="section-head"><div><h2>Explore study material</h2><p>Choose a category to find what you need.</p></div></div>
+    <div class="filters" aria-label="Filter categories">
+      <button class="filter active" data-filter="all">All material</button>
+      <button class="filter" data-filter="notes">Subject notes</button>
+      <button class="filter" data-filter="assignments">Assignments</button>
+      <button class="filter" data-filter="practicals">Practicals</button>
+      <button class="filter" data-filter="papers">Question papers</button>
+    </div>
+    <div class="grid" id="materialGrid">
+      <article class="card" data-category="notes" data-search="communication skills english notes unit">
+        <div class="cardtop"><span class="subject-icon">🗣️</span><span class="tag">NOTES</span></div>
+        <h3>Communication Skills</h3><p>Unit-wise notes, key concepts and revision material.</p><span class="soon">Material coming soon</span>
+      </article>
+      <article class="card" data-category="notes" data-search="programming c c++ python coding notes">
+        <div class="cardtop"><span class="subject-icon" style="background:#f3e8ff">💻</span><span class="tag">NOTES</span></div>
+        <h3>Programming</h3><p>Programming concepts, examples and coding notes.</p><span class="soon">Material coming soon</span>
+      </article>
+      <article class="card" data-category="notes" data-search="computer fundamentals information technology">
+        <div class="cardtop"><span class="subject-icon" style="background:#dcfce7">🖥️</span><span class="tag">NOTES</span></div>
+        <h3>Computer Fundamentals</h3><p>Computer basics, terminology and important topics.</p><span class="soon">Material coming soon</span>
+      </article>
+      <article class="card" data-category="assignments" data-search="assignments questions answers written work">
+        <div class="cardtop"><span class="subject-icon" style="background:#fef3c7">📝</span><span class="tag">ASSIGNMENTS</span></div>
+        <h3>Assignments</h3><p>Subject-wise assignment questions and answer files.</p><span class="soon">Material coming soon</span>
+      </article>
+      <article class="card" data-category="practicals" data-search="practical lab programs output code">
+        <div class="cardtop"><span class="subject-icon" style="background:#ffe4e6">⌨️</span><span class="tag">PRACTICALS</span></div>
+        <h3>Practicals & Programs</h3><p>Lab work, program files and practical preparation.</p><span class="soon">Material coming soon</span>
+      </article>
+      <article class="card" data-category="papers" data-search="previous year question paper exam">
+        <div class="cardtop"><span class="subject-icon" style="background:#e0e7ff">📑</span><span class="tag">EXAMS</span></div>
+        <h3>Question Papers</h3><p>Previous papers and exam-practice resources.</p><span class="soon">Material coming soon</span>
+      </article>
+    </div>
+    <div class="empty" id="emptyState">No matching material found. Try another search.</div>
+    <div class="notice"><strong>For the website owner:</strong> These are starter categories. Add your own PDFs and links before sharing this site with students. Only upload files you are allowed to share; avoid posting private information or copyrighted books without permission.</div>
+  </section>
+  <section class="section" id="resources">
+    <div class="section-head"><div><h2>Study resources</h2><p>Keep your learning organised.</p></div></div>
+    <div class="grid">
+      <article class="card" data-category="resources" data-search="exam preparation checklist"><div class="cardtop"><span class="subject-icon">✅</span><span class="tag">GUIDE</span></div><h3>Exam Preparation</h3><p>Make a revision checklist and track topics to practise.</p><span class="soon">Coming soon</span></article>
+      <article class="card" data-category="resources" data-search="study tips timetable"><div class="cardtop"><span class="subject-icon" style="background:#dcfce7">🗓️</span><span class="tag">GUIDE</span></div><h3>Study Planner</h3><p>Plan your weekly study sessions and revision time.</p><span class="soon">Coming soon</span></article>
+      <article class="card" data-category="resources" data-search="new notes updates"><div class="cardtop"><span class="subject-icon" style="background:#fef3c7">🔔</span><span class="tag">UPDATES</span></div><h3>Latest Updates</h3><p>Check back as new notes and resources are added.</p><span class="soon">Updates soon</span></article>
+    </div>
+  </section>
+  <section class="section" id="about">
+    <div class="about"><h2>About My College Hub</h2><p>My College Hub is a student-friendly place for organising BCA study material. The aim is to make notes, assignments and practical resources easier to find from a phone or computer. This is an independent student resource and is not an official college website.</p></div>
+  </section>
+</main>
+<footer class="footer"><div class="wrap"><span>© <span id="year"></span> <strong>My College Hub</strong></span><span>Made for students, one topic at a time.</span></div></footer>
+<script>
+const searchInput=document.getElementById('searchInput');
+const cards=[...document.querySelectorAll('#materialGrid .card')];
+const filters=[...document.querySelectorAll('.filter')];
+let activeFilter='all';
+function updateCards(){
+  const q=searchInput.value.trim().toLowerCase();let visible=0;
+  cards.forEach(card=>{
+    const categoryMatch=activeFilter==='all'||card.dataset.category===activeFilter;
+    const searchText=(card.dataset.search+' '+card.innerText).toLowerCase();
+    const searchMatch=!q||searchText.includes(q);
+    card.style.display=categoryMatch&&searchMatch?'flex':'none';
+    if(categoryMatch&&searchMatch)visible++;
+  });
+  document.getElementById('emptyState').style.display=visible?'none':'block';
+}
+filters.forEach(btn=>btn.addEventListener('click',()=>{
+  filters.forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+  activeFilter=btn.dataset.filter;updateCards();
+}));
+document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();updateCards();document.getElementById('subjects').scrollIntoView({behavior:'smooth'});});
+searchInput.addEventListener('input',updateCards);
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
